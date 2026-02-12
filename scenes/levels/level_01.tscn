@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://qn23navxqlcw"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/brackeys-proto-controller-main/proto_controller/proto_controller.tscn" id="1_m802k"]
+[ext_resource type="PackedScene" uid="uid://cu2xi8pqht8bb" path="res://assets/obama_cube.glb" id="2_i2aat"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m802k"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -33,21 +34,41 @@ use_collision = true
 transform = Transform3D(1.011, 0, 0, 0, 0.205, 0, 0, 0, 1, 0, 0, 0)
 size = Vector3(50, 0.5, 50)
 
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="CSGCombiner3D" unique_id=2022047309]
+transform = Transform3D(-4.3711385e-08, 0, 2.5, 0.99999994, -4.371139e-08, 1.09278474e-07, 4.3711385e-08, 1, 4.7767136e-15, -11, 3.5, -8.5)
+polygon = PackedVector2Array(-3.5, 0, -3.5, 8, -0.73288894, 3.0157156, 1, 0)
+
 [node name="Wall" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1131825370]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -22)
 size = Vector3(40, 4, 0.5)
 
+[node name="Wall8" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1569663736]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.853149, 6, -22)
+size = Vector3(16.293701, 4, 0.5)
+
 [node name="Wall4" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1884300556]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 17)
+size = Vector3(40, 4, 0.5)
+
+[node name="Wall10" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1356409401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.919983, 6, 17)
+size = Vector3(16.160034, 4, 0.5)
+
+[node name="Wall3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1273386415]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -20, 2, -2.5)
+size = Vector3(40, 4, 0.5)
+
+[node name="Wall7" type="CSGBox3D" parent="CSGCombiner3D" unique_id=937028520]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -20, 6, -2.5)
 size = Vector3(40, 4, 0.5)
 
 [node name="Wall2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1192168741]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 20, 2, -2.5)
 size = Vector3(40, 4, 0.5)
 
-[node name="Wall3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1273386415]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -20, 2, -2.5)
-size = Vector3(40, 4, 0.5)
+[node name="Wall9" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1277978061]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -4, 6, -2.359253)
+size = Vector3(39.718506, 4, 0.5)
 
 [node name="Wall5" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1853915014]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -4, 2, -2.5)
@@ -95,5 +116,29 @@ radius = 1.0
 height = 1.5
 sides = 18
 
+[node name="Roof1" type="CSGBox3D" parent="CSGCombiner3D" unique_id=597881587]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.952899, 4.156372, 10.161926)
+size = Vector3(16.451416, 0.68725586, 13.634399)
+
+[node name="Roof2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=840981107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.952899, 4.156372, -15.314089)
+size = Vector3(16.451416, 0.68725586, 13.634399)
+
+[node name="Roof3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1016787412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.428608, 4.156372, -2.496889)
+size = Vector3(3.5, 0.68725586, 12)
+
+[node name="Roof4" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1105562031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4715157, 4.156372, -2.496889)
+size = Vector3(3.4141846, 0.68725586, 12)
+
 [node name="ProtoController" parent="." unique_id=1344493067 instance=ExtResource("1_m802k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0.051250577, 10)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1410007616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 3, 10.5)
+omni_range = 18.537
+omni_attenuation = 0.726
+
+[node name="obama_cube2" parent="." unique_id=1920919046 instance=ExtResource("2_i2aat")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -11.5, 12.5, 8.5)
