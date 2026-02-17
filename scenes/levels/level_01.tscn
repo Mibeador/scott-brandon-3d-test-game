@@ -120,6 +120,10 @@ sides = 18
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.952899, 4.156372, 10.161926)
 size = Vector3(16.451416, 0.68725586, 13.634399)
 
+[node name="Roof5" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1869575422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.952899, 7.656372, -2.520874)
+size = Vector3(16.451416, 0.68725586, 39)
+
 [node name="Roof2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=840981107]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.952899, 4.156372, -15.314089)
 size = Vector3(16.451416, 0.68725586, 13.634399)
