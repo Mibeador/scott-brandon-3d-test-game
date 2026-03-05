@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://nlasim8sifbb"]
+
+[ext_resource type="PackedScene" uid="uid://dsn4ncaxs7uvs" path="res://addons/dungeon_assets/props/table_small.glb" id="1_2autg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jky2y"]
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=109109223]
+
+[node name="table_small2" parent="." unique_id=814499347 instance=ExtResource("1_2autg")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1206711093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_jky2y")

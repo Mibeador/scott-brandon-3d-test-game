@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dnk3ribqwd03w"]
+
+[ext_resource type="PackedScene" uid="uid://b34lfipqul22b" path="res://addons/dungeon_assets/building/ceiling.glb" id="1_vfq4a"]
+[ext_resource type="PackedScene" uid="uid://dqtppm12emtu1" path="res://addons/dungeon_assets/building/floor_wood.glb" id="2_fxusd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fhupj"]
+size = Vector3(2, 0.90000004, 4)
+
+[node name="StairHalf" type="StaticBody3D" unique_id=628904660]
+
+[node name="ceiling" parent="." unique_id=1700179979 instance=ExtResource("1_vfq4a")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="floor_wood" parent="." unique_id=1013741215 instance=ExtResource("2_fxusd")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.57942784, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1341574934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20000002, 0)
+shape = SubResource("BoxShape3D_fhupj")

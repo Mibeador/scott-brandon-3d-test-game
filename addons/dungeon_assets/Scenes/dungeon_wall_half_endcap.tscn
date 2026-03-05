@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://b152qfhy5bxg1"]
+
+[ext_resource type="PackedScene" uid="uid://btfi2hflgud3s" path="res://addons/dungeon_assets/building/wall_half_endcap.glb" id="1_bnfgw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_48djy"]
+size = Vector3(2, 0.8, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qqyw3"]
+size = Vector3(2, 0.5, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sitla"]
+size = Vector3(1.7, 2.7, 1)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=902479386]
+
+[node name="wall_half_endcap2" parent="." unique_id=1118537779 instance=ExtResource("1_bnfgw")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1803497361]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3.6, 0)
+shape = SubResource("BoxShape3D_48djy")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1632385404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.24999985, 0)
+shape = SubResource("BoxShape3D_qqyw3")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=847622611]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15, 1.8499999, 0)
+shape = SubResource("BoxShape3D_sitla")

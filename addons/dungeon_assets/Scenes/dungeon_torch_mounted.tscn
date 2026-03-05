@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c14phd1ua0as8"]
+
+[ext_resource type="PackedScene" uid="uid://dm01teosfyif" path="res://addons/dungeon_assets/props/torch_mounted.glb" id="1_fip6l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dq4tm"]
+size = Vector3(0.6, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1jp72"]
+size = Vector3(0.6, 0.55, 0.3)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1127735540]
+
+[node name="torch_mounted2" parent="." unique_id=1339256723 instance=ExtResource("1_fip6l")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=258491881]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.45000005, 0.25)
+shape = SubResource("BoxShape3D_dq4tm")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=316910625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07499996, 0.15)
+shape = SubResource("BoxShape3D_1jp72")

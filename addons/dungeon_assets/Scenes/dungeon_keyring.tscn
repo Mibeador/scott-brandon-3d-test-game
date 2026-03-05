@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://byod6fdfgs0ah"]
+
+[ext_resource type="PackedScene" uid="uid://b76b4n1qs1o5w" path="res://addons/dungeon_assets/props/keyring.glb" id="1_rtjd3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4roc2"]
+size = Vector3(1, 0.25, 1.2)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1788307037]
+
+[node name="keyring2" parent="." unique_id=587426106 instance=ExtResource("1_rtjd3")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=607822554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049999997, 0.125, -0.049999952)
+shape = SubResource("BoxShape3D_4roc2")
