@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://ef8l73fshctg" path="res://addons/dungeon_assets/Scenes/dungeon_wall_doorway_open.tscn" id="10_07lms"]
 [ext_resource type="PackedScene" uid="uid://nlasim8sifbb" path="res://addons/dungeon_assets/Scenes/dungeon_table_small.tscn" id="10_stkom"]
 [ext_resource type="PackedScene" uid="uid://dap41kdtp2d7m" path="res://addons/dungeon_assets/Scenes/dungeon_wall_tsplit.tscn" id="11_gi8m4"]
+[ext_resource type="PackedScene" uid="uid://bk55byu0b2o36" path="res://scenes/vfx_fire_red.tscn" id="12_cag23"]
 [ext_resource type="PackedScene" uid="uid://c3gn3n3ukybkv" path="res://addons/dungeon_assets/Scenes/dungeon_ceiling.tscn" id="12_jmes4"]
 [ext_resource type="PackedScene" uid="uid://c31xcn311l6ml" path="res://addons/dungeon_assets/Scenes/dungeon_floor_wood.tscn" id="13_tyxjt"]
 [ext_resource type="PackedScene" uid="uid://b4ook3px6ccgl" path="res://scenes/starting_greatsword.tscn" id="14_5t8rk"]
@@ -801,6 +802,9 @@ transform = Transform3D(1, 0, -7.351371e-08, 0, 1, 0, 7.351371e-08, 0, 1, -4.768
 omni_range = 18.537
 omni_attenuation = 0.726
 
+[node name="VFXFireRed" parent="Objects/BaseFloor/StaticBody3D8" unique_id=1921025606 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.39999998)
+
 [node name="StaticBody3D9" parent="Objects/BaseFloor" unique_id=1679022182 instance=ExtResource("8_stkom")]
 transform = Transform3D(-1, 0, 8.940697e-08, 0, 1, 0, -8.940697e-08, 0, -1, 14, 1.5, -11.249999)
 
@@ -808,6 +812,9 @@ transform = Transform3D(-1, 0, 8.940697e-08, 0, 1, 0, -8.940697e-08, 0, -1, 14, 
 transform = Transform3D(1, 0, -7.351371e-08, 0, 1, 0, 7.351371e-08, 0, 1, -7.4505806e-07, 0.4499998, 0.4000015)
 omni_range = 18.537
 omni_attenuation = 0.726
+
+[node name="VFXFireRed" parent="Objects/BaseFloor/StaticBody3D9" unique_id=1408303029 instance=ExtResource("12_cag23")]
+transform = Transform3D(-1, 0, -8.940697e-08, 0, 1, 0, 8.940697e-08, 0, -1, 0, 0.5, 0.25000095)
 
 [node name="StaticBody3D10" parent="Objects/BaseFloor" unique_id=1109241496 instance=ExtResource("24_1uvka")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.5, 0, 9.75)
@@ -2268,6 +2275,18 @@ transform = Transform3D(1, 0, -7.351371e-08, 0, 1, 0, 7.351371e-08, 0, 1, -7.500
 omni_range = 18.537
 omni_attenuation = 0.726
 
+[node name="VFXFireRed" parent="Objects/ObamaTower" unique_id=1118186796 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.6, 2.5, -0.5)
+
+[node name="VFXFireRed2" parent="Objects/ObamaTower" unique_id=50059971 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.6, 2.5, -5.9500003)
+
+[node name="VFXFireRed3" parent="Objects/ObamaTower" unique_id=1194638371 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.6, 14.5, -6.4500003)
+
+[node name="VFXFireRed4" parent="Objects/ObamaTower" unique_id=659200017 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.6, 14.5, 1.0499997)
+
 [node name="ObamaChamber" type="Node" parent="Objects" unique_id=1008888628]
 
 [node name="Wall1" parent="Objects/ObamaChamber" unique_id=954842343 instance=ExtResource("5_50wog")]
@@ -2884,5 +2903,29 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 31.9
 [node name="StaticBody3D73" parent="Objects/ObamaChamber" unique_id=82232469 instance=ExtResource("30_stkom")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 16, -15)
 
+[node name="VFXFireRed" parent="Objects/ObamaChamber" unique_id=1881070851 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.5, 19, 3.5)
+
+[node name="VFXFireRed2" parent="Objects/ObamaChamber" unique_id=469302879 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.5, 19, -8.5)
+
+[node name="VFXFireRed3" parent="Objects/ObamaChamber" unique_id=58600238 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 19, -10.5)
+
+[node name="VFXFireRed4" parent="Objects/ObamaChamber" unique_id=205205970 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 19, 5.5)
+
 [node name="ProtoController" parent="." unique_id=891888572 instance=ExtResource("1_m802k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0.051250577, 10)
+
+[node name="VFX_Fire_Red" parent="." unique_id=1991312473 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.226122, 2.5, 9)
+
+[node name="VFX_Fire_Red2" parent="." unique_id=1912828291 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.976122, 6, 16.5)
+
+[node name="VFX_Fire_Red3" parent="." unique_id=156933891 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.976122, 6.5, 4.5)
+
+[node name="VFX_Fire_Red4" parent="." unique_id=1940030573 instance=ExtResource("12_cag23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.476122, 6.5, 4.5)
