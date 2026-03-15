@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://dap41kdtp2d7m" path="res://addons/dungeon_assets/Scenes/dungeon_wall_tsplit.tscn" id="11_gi8m4"]
 [ext_resource type="PackedScene" uid="uid://c3gn3n3ukybkv" path="res://addons/dungeon_assets/Scenes/dungeon_ceiling.tscn" id="12_jmes4"]
 [ext_resource type="PackedScene" uid="uid://c31xcn311l6ml" path="res://addons/dungeon_assets/Scenes/dungeon_floor_wood.tscn" id="13_tyxjt"]
+[ext_resource type="PackedScene" uid="uid://cy3yc1rfgb1h4" path="res://scenes/Basic Greatsword.glb" id="14_5t8rk"]
 [ext_resource type="PackedScene" uid="uid://dnk3ribqwd03w" path="res://addons/dungeon_assets/Scenes/dungeon_stair_half.tscn" id="15_cwffn"]
 [ext_resource type="PackedScene" uid="uid://cr430sb3d5c4h" path="res://addons/dungeon_assets/Scenes/dungeon_wall_half.tscn" id="15_e6lid"]
 [ext_resource type="PackedScene" uid="uid://deqy3w2dtjlax" path="res://addons/dungeon_assets/Scenes/dungeon_table_medium.tscn" id="20_5t8rk"]
@@ -879,6 +880,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5, 0, 6.5)
 
 [node name="StaticBody3D33" parent="Objects/BaseFloor" unique_id=1788307037 instance=ExtResource("29_cag23")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5, 1, 6.5)
+
+[node name="Basic Greatsword" parent="Objects/BaseFloor" unique_id=447248793 instance=ExtResource("14_5t8rk")]
+transform = Transform3D(0.09, 0, 0, 0, 0.07794229, 0.045, 0, -0.045, 0.07794229, -10.375, -0.06094324, 2.6474435)
 
 [node name="StartBuilding" type="Node" parent="Objects" unique_id=933200881]
 
