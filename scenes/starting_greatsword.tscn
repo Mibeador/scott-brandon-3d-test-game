@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b4ook3px6ccgl"]
+
+[ext_resource type="PackedScene" uid="uid://cy3yc1rfgb1h4" path="res://scenes/Basic Greatsword.glb" id="1_5bj6d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b1cub"]
+size = Vector3(0.7, 2.95, 0.1)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=594848065]
+
+[node name="Basic Greatsword" parent="." unique_id=297210704 instance=ExtResource("1_5bj6d")]
+transform = Transform3D(0.105, 0, 0, 0, 0.105, 0, 0, 0, 0.105, 0, -0.1575, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=290402003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 1.475, -3.7252903e-09)
+shape = SubResource("BoxShape3D_b1cub")
