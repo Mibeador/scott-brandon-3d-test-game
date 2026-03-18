@@ -57,6 +57,7 @@ scale_min = 0.75
 scale_max = 1.5
 scale_curve = SubResource("CurveTexture_g1fto")
 color = Color(4.0118437, 1.3059056, 0.79192847, 1)
+collision_mode = 2
 
 [sub_resource type="QuadMesh" id="QuadMesh_l1krc"]
 
@@ -79,6 +80,7 @@ scale_max = 2.0
 scale_curve = SubResource("CurveTexture_g1fto")
 color = Color(0, 0, 0, 1)
 color_ramp = SubResource("GradientTexture1D_l1krc")
+collision_mode = 2
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_l1wfc"]
 render_priority = 0
@@ -94,6 +96,7 @@ scale_max = 0.12
 color = Color(4.0118437, 1.3059056, 0.79192847, 1)
 turbulence_enabled = true
 turbulence_noise_scale = 5.0
+collision_mode = 2
 
 [sub_resource type="QuadMesh" id="QuadMesh_uaocy"]
 
